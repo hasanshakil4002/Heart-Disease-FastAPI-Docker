@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+
+  heart-api:
+
+    build:
+      context: .
+
+    container_name: heart-api-container
+
+    ports:
+      - "8000:8000"
+
+    restart: unless-stopped
