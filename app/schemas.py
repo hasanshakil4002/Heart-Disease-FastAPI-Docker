@@ -14,4 +14,4 @@ class HeartData(BaseModel):
     oldpeak: float = Field(..., example=2.3)
     slope: int = Field(..., example=0)
     ca: int = Field(..., example=0)
-    thal: int = Field(..., example=1)
+    thal: int = Field(..., example=1) 
