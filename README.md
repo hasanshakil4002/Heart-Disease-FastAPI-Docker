@@ -92,6 +92,11 @@ Heart-Disease-FastAPI-Docker/
 
 **Dataset:** Heart Disease Dataset
 
+```bash
+Dataset link
+https://www.kaggle.com/datasets/johnsmith88/heart-disease-dataset
+```
+
 Features used:
 
 * Age
@@ -122,7 +127,7 @@ Target:
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/Heart-Disease-FastAPI-Docker.git
+git clone https://github.com/hasanshakil4002/Heart-Disease-FastAPI-Docker.git
 
 cd Heart-Disease-FastAPI-Docker
 ```
@@ -347,10 +352,13 @@ Deployment steps:
 
 ## 👨‍💻 Author
 
-**Your Name**
+**MD. SHAKIL HASAN**
 
-* GitHub: https://github.com/your-username
-* LinkedIn: https://linkedin.com/in/your-profile
+* GitHub: https://github.com/hasanshakil4002
+
+* GitHub Repo link : https://github.com/hasanshakil4002/Heart-Disease-FastAPI-Docker.git
+
+* LinkedIn: https://www.linkedin.com/in/md-shakil-hasan-2505b340b/
 
 ---
 
@@ -371,4 +379,4 @@ If you found this project helpful:
 * 💡 Suggest improvements
 * 🐛 Report issues
 
-Thank you for visiting this project!
+Thank you for visiting this project! 
