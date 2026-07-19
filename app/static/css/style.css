@@ -1,0 +1,1406 @@
+/* =====================================================
+   GOOGLE FONT
+===================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* =====================================================
+   CSS VARIABLES
+===================================================== */
+
+:root{
+
+    --primary:#2563eb;
+    --primary-dark:#1d4ed8;
+
+    --secondary:#3b82f6;
+
+    --success:#10b981;
+
+    --danger:#ef4444;
+
+    --warning:#f59e0b;
+
+    --white:#ffffff;
+
+    --text:#1e293b;
+
+    --text-light:#64748b;
+
+    --border:#e2e8f0;
+
+    --background:#eef5ff;
+
+    --shadow:
+        0 12px 35px rgba(0,0,0,.08);
+
+    --radius:18px;
+
+}
+
+/* =====================================================
+   RESET
+===================================================== */
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:linear-gradient(135deg,#eef5ff,#ffffff);
+
+    color:var(--text);
+
+    min-height:100vh;
+
+}
+
+/* =====================================================
+   LINKS
+===================================================== */
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+ul{
+
+    list-style:none;
+
+}
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+
+.navbar{
+
+    width:100%;
+
+    background:white;
+
+    padding:18px 60px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    box-shadow:0 2px 15px rgba(0,0,0,.05);
+
+    position:sticky;
+
+    top:0;
+
+    z-index:100;
+
+}
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    font-size:24px;
+
+    font-weight:700;
+
+    color:var(--primary);
+
+}
+
+.logo i{
+
+    color:#e11d48;
+
+    font-size:28px;
+
+}
+
+.navbar ul{
+
+    display:flex;
+
+    gap:30px;
+
+}
+
+.navbar li{
+
+    font-weight:500;
+
+    color:var(--text-light);
+
+    transition:.3s;
+
+}
+
+.navbar li:hover{
+
+    color:var(--primary);
+
+}
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero{
+
+    text-align:center;
+
+    padding:50px 20px;
+
+}
+
+.hero h1{
+
+    font-size:42px;
+
+    font-weight:700;
+
+    color:var(--text);
+
+}
+
+.hero p{
+
+    margin-top:15px;
+
+    color:var(--text-light);
+
+    font-size:18px;
+
+}
+
+/* =====================================================
+   MAIN CONTAINER
+===================================================== */
+
+.container{
+
+    max-width:1400px;
+
+    margin:auto;
+
+    padding:20px;
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr;
+
+    gap:30px;
+
+}
+
+/* =====================================================
+   CARD
+===================================================== */
+
+.card{
+
+    background:white;
+
+    border-radius:var(--radius);
+
+    box-shadow:var(--shadow);
+
+    padding:35px;
+
+}
+
+.card-title{
+
+    font-size:22px;
+
+    font-weight:700;
+
+    margin-bottom:25px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    color:var(--primary);
+
+}
+
+.card-title i{
+
+    font-size:26px;
+
+}
+
+/* =====================================================
+   FORM GRID
+===================================================== */
+
+.grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+}
+
+/* =====================================================
+   INPUT GROUP
+===================================================== */
+
+.input-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.input-group label{
+
+    margin-bottom:8px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    color:var(--text);
+
+}
+
+.input-group input,
+
+.input-group select{
+
+    width:100%;
+
+    padding:14px 16px;
+
+    border:1px solid var(--border);
+
+    border-radius:12px;
+
+    outline:none;
+
+    font-size:15px;
+
+    transition:.3s;
+
+    background:#fafcff;
+
+}
+
+.input-group input:focus,
+
+.input-group select:focus{
+
+    border-color:var(--primary);
+
+    box-shadow:0 0 0 4px rgba(37,99,235,.12);
+
+}
+
+/* =====================================================
+   BUTTON
+===================================================== */
+
+.predict-btn{
+
+    margin-top:35px;
+
+    width:100%;
+
+    border:none;
+
+    padding:18px;
+
+    border-radius:14px;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.predict-btn i{
+
+    margin-right:10px;
+
+}
+
+.predict-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+
+    0 10px 25px rgba(37,99,235,.35);
+
+}
+
+/* =====================================================
+   WAITING CARD
+===================================================== */
+
+.waiting{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    min-height:520px;
+
+}
+
+.waiting-icon{
+
+    font-size:85px;
+
+    color:#dbeafe;
+
+    margin-bottom:25px;
+
+}
+
+.waiting h2{
+
+    margin-bottom:10px;
+
+    color:var(--primary);
+
+}
+
+.waiting p{
+
+    color:var(--text-light);
+
+    line-height:1.7;
+
+}
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer{
+
+    margin-top:50px;
+
+    padding:30px;
+
+    text-align:center;
+
+    color:var(--text-light);
+
+}
+
+
+/* =====================================================
+   LOADING STATE
+===================================================== */
+
+.loading{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    min-height:520px;
+
+    text-align:center;
+
+}
+
+.spinner{
+
+    width:80px;
+
+    height:80px;
+
+    border:8px solid #dbeafe;
+
+    border-top:8px solid var(--primary);
+
+    border-radius:50%;
+
+    animation:spin 1s linear infinite;
+
+    margin-bottom:25px;
+
+}
+
+.loading h2{
+
+    color:var(--primary);
+
+    margin-bottom:10px;
+
+}
+
+.loading p{
+
+    color:var(--text-light);
+
+}
+
+/* =====================================================
+   RESULT CARD
+===================================================== */
+
+.result-card{
+
+    animation:fadeUp .5s ease;
+
+}
+
+.result-header{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    margin-bottom:25px;
+
+}
+
+.result-title{
+
+    font-size:26px;
+
+    font-weight:700;
+
+}
+
+.result-icon{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:30px;
+
+    color:white;
+
+}
+
+/* =====================================================
+   RISK STATUS
+===================================================== */
+
+.high-risk{
+
+    background:#fee2e2;
+
+    border-left:8px solid var(--danger);
+
+}
+
+.high-risk .result-title{
+
+    color:var(--danger);
+
+}
+
+.high-risk .result-icon{
+
+    background:var(--danger);
+
+}
+
+.low-risk{
+
+    background:#dcfce7;
+
+    border-left:8px solid var(--success);
+
+}
+
+.low-risk .result-title{
+
+    color:var(--success);
+
+}
+
+.low-risk .result-icon{
+
+    background:var(--success);
+
+}
+
+/* =====================================================
+   BADGE
+===================================================== */
+
+.status-badge{
+
+    display:inline-block;
+
+    padding:10px 18px;
+
+    border-radius:40px;
+
+    color:white;
+
+    font-weight:600;
+
+    margin-bottom:25px;
+
+}
+
+.status-high{
+
+    background:var(--danger);
+
+}
+
+.status-low{
+
+    background:var(--success);
+
+}
+
+/* =====================================================
+   PROBABILITY CARD
+===================================================== */
+
+.probability-card{
+
+    margin-top:25px;
+
+}
+
+.probability-title{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    font-weight:600;
+
+    margin-bottom:12px;
+
+}
+
+/* =====================================================
+   PROGRESS BAR
+===================================================== */
+
+.progress{
+
+    width:100%;
+
+    height:18px;
+
+    background:#e2e8f0;
+
+    border-radius:50px;
+
+    overflow:hidden;
+
+}
+
+.progress-bar{
+
+    height:100%;
+
+    width:0;
+
+    border-radius:50px;
+
+    transition:width 1.2s ease;
+
+}
+
+.progress-high{
+
+    background:linear-gradient(
+        90deg,
+        #ef4444,
+        #dc2626
+    );
+
+}
+
+.progress-low{
+
+    background:linear-gradient(
+        90deg,
+        #22c55e,
+        #16a34a
+    );
+
+}
+
+/* =====================================================
+   PERCENTAGE
+===================================================== */
+
+.percentage{
+
+    text-align:center;
+
+    margin-top:20px;
+
+    font-size:50px;
+
+    font-weight:700;
+
+}
+
+.high-risk .percentage{
+
+    color:var(--danger);
+
+}
+
+.low-risk .percentage{
+
+    color:var(--success);
+
+}
+
+/* =====================================================
+   RECOMMENDATION BOX
+===================================================== */
+
+.recommendation{
+
+    margin-top:35px;
+
+    border-radius:15px;
+
+    padding:22px;
+
+    background:#f8fafc;
+
+    border:1px solid var(--border);
+
+}
+
+.recommendation h3{
+
+    margin-bottom:12px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+.recommendation p{
+
+    color:var(--text-light);
+
+    line-height:1.8;
+
+}
+
+/* =====================================================
+   INFO GRID
+===================================================== */
+
+.info-grid{
+
+    margin-top:30px;
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:18px;
+
+}
+
+.info-box{
+
+    background:white;
+
+    border:1px solid var(--border);
+
+    border-radius:14px;
+
+    padding:18px;
+
+}
+
+.info-box h4{
+
+    font-size:14px;
+
+    color:var(--text-light);
+
+    margin-bottom:8px;
+
+}
+
+.info-box p{
+
+    font-size:22px;
+
+    font-weight:700;
+
+}
+
+/* =====================================================
+   ALERT BOX
+===================================================== */
+
+.alert{
+
+    margin-top:30px;
+
+    padding:18px;
+
+    border-radius:12px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    font-weight:500;
+
+}
+
+.alert-high{
+
+    background:#fee2e2;
+
+    color:#991b1b;
+
+}
+
+.alert-low{
+
+    background:#dcfce7;
+
+    color:#166534;
+
+}
+
+.alert i{
+
+    font-size:24px;
+
+}
+
+/* =====================================================
+   PULSE HEART
+===================================================== */
+
+.heart-animation{
+
+    animation:pulseHeart 1.3s infinite;
+
+}
+
+/* =====================================================
+   KEYFRAMES
+===================================================== */
+
+@keyframes spin{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes pulseHeart{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.15);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+/* =====================================================
+   CARD HOVER EFFECT
+===================================================== */
+
+.card{
+
+    transition:all .35s ease;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:
+        0 25px 60px rgba(37,99,235,.15);
+
+}
+
+/* =====================================================
+   NAVBAR HOVER
+===================================================== */
+
+.navbar li a{
+
+    position:relative;
+
+    transition:.3s;
+
+}
+
+.navbar li a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-6px;
+
+    width:0;
+
+    height:3px;
+
+    border-radius:50px;
+
+    background:var(--primary);
+
+    transition:.35s;
+
+}
+
+.navbar li a:hover::after{
+
+    width:100%;
+
+}
+
+/* =====================================================
+   INPUT HOVER
+===================================================== */
+
+.input-group input:hover,
+.input-group select:hover{
+
+    border-color:#93c5fd;
+
+}
+
+/* =====================================================
+   BUTTON ACTIVE
+===================================================== */
+
+.predict-btn:active{
+
+    transform:scale(.98);
+
+}
+
+/* =====================================================
+   HERO ANIMATION
+===================================================== */
+
+.hero h1{
+
+    animation:fadeHero .8s ease;
+
+}
+
+.hero p{
+
+    animation:fadeHero 1.2s ease;
+
+}
+
+/* =====================================================
+   GLASS EFFECT
+===================================================== */
+
+.card{
+
+    backdrop-filter:blur(12px);
+
+    background:rgba(255,255,255,.94);
+
+}
+
+/* =====================================================
+   CUSTOM SCROLLBAR
+===================================================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#eef2ff;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#3b82f6;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#2563eb;
+
+}
+
+/* =====================================================
+   SELECTION
+===================================================== */
+
+::selection{
+
+    background:#2563eb;
+
+    color:white;
+
+}
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media(max-width:1100px){
+
+    .container{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .waiting{
+
+        min-height:300px;
+
+    }
+
+}
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media(max-width:768px){
+
+    .navbar{
+
+        flex-direction:column;
+
+        gap:20px;
+
+        padding:20px;
+
+    }
+
+    .navbar ul{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+        gap:20px;
+
+    }
+
+    .hero{
+
+        padding:35px 20px;
+
+    }
+
+    .hero h1{
+
+        font-size:32px;
+
+    }
+
+    .hero p{
+
+        font-size:16px;
+
+    }
+
+    .grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .card{
+
+        padding:25px;
+
+    }
+
+    .card-title{
+
+        font-size:20px;
+
+    }
+
+    .predict-btn{
+
+        font-size:17px;
+
+    }
+
+    .percentage{
+
+        font-size:42px;
+
+    }
+
+    .info-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media(max-width:480px){
+
+    .hero h1{
+
+        font-size:28px;
+
+    }
+
+    .logo{
+
+        font-size:20px;
+
+    }
+
+    .logo i{
+
+        font-size:24px;
+
+    }
+
+    .navbar{
+
+        padding:16px;
+
+    }
+
+    .container{
+
+        padding:15px;
+
+        gap:20px;
+
+    }
+
+    .card{
+
+        padding:20px;
+
+        border-radius:14px;
+
+    }
+
+    .predict-btn{
+
+        padding:16px;
+
+    }
+
+    .waiting-icon{
+
+        font-size:60px;
+
+    }
+
+}
+
+/* =====================================================
+   ANIMATIONS
+===================================================== */
+
+@keyframes fadeHero{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(-25px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* =====================================================
+   FLOATING BACKGROUND
+===================================================== */
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    width:450px;
+
+    height:450px;
+
+    border-radius:50%;
+
+    background:rgba(59,130,246,.08);
+
+    top:-180px;
+
+    left:-150px;
+
+    z-index:-1;
+
+}
+
+body::after{
+
+    content:"";
+
+    position:fixed;
+
+    width:500px;
+
+    height:500px;
+
+    border-radius:50%;
+
+    background:rgba(37,99,235,.05);
+
+    right:-180px;
+
+    bottom:-220px;
+
+    z-index:-1;
+
+}
+
+/* =====================================================
+   FADE ANIMATION
+===================================================== */
+
+.fade{
+
+    animation:fadeUp .5s ease;
+
+}
+
+/* =====================================================
+   SHADOW UTILITIES
+===================================================== */
+
+.shadow-sm{
+
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+
+}
+
+.shadow-md{
+
+    box-shadow:0 10px 30px rgba(0,0,0,.12);
+
+}
+
+.shadow-lg{
+
+    box-shadow:0 20px 45px rgba(0,0,0,.18);
+
+}
+
+/* =====================================
+   BUTTON GROUP
+===================================== */
+
+.button-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+    margin-top:30px;
+
+}
+
+.secondary-btn{
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    background:white;
+
+    border:2px solid #dbeafe;
+
+    transition:.3s;
+
+}
+
+.secondary-btn:hover{
+
+    background:#2563eb;
+
+    color:white;
+
+}
+
+/* =====================================
+   TOAST
+===================================== */
+
+.toast{
+
+    position:fixed;
+
+    top:30px;
+
+    right:30px;
+
+    background:#10b981;
+
+    color:white;
+
+    padding:18px 25px;
+
+    border-radius:12px;
+
+    opacity:0;
+
+    pointer-events:none;
+
+    transition:.4s;
+
+    z-index:9999;
+
+}
+
+.toast.show{
+
+    opacity:1;
+
+}
